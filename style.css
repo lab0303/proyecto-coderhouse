@@ -402,3 +402,21 @@ p {
 }
 /*Para tablet*/
 /*Responsive contactanos */
+
+/*Animaciones*/
+
+.tarjeta:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.1);
+}
+
+.comentarios:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.1);
+}
+
+.menu li a:hover {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: red;
+}
