@@ -13,24 +13,10 @@ body {
 }
 .imagen-logo {
   padding-left: 20px;
-  width: 50%;
 }
 .imagen-logo img {
   width: 100px;
   height: 100px;
-}
-
-.nav-header {
-  width: 50%;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-.menu li a {
-  text-decoration: none;
 }
 
 /*CSS para el header*/
@@ -60,11 +46,6 @@ body {
 }
 /*CSS para el footer*/
 /*CSS del index*/
-.titulo {
-  font-size: 3rem;
-  color: red;
-  text-align: center;
-}
 
 main {
   width: 100%;
@@ -95,12 +76,7 @@ main {
 }
 /*CSS del index*/
 /*CSS adopciones*/
-.subtitulo {
-  font-size: 2rem;
-  color: red;
-  margin: 10px;
-  padding: 10px;
-}
+
 .tarjeta-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -199,17 +175,7 @@ p {
 
 /*CSS comentarios*/
 /*CSS contactanos*/
-.contacto-container {
-  display: flex;
-  margin: 15px;
-}
-.formulario {
-  border: solid 1px black;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-}
+
 .imagen-contacto {
   width: 50%;
   display: flex;
@@ -366,42 +332,6 @@ p {
 /*Para tablet*/
 
 /*Responsive comentarios */
-/*Responsive contactanos */
-/*Para celular*/
-@media only screen and (max-width: 450px) {
-  .contacto-container {
-    flex-direction: column;
-  }
-  .formulario {
-    width: 100%;
-  }
-  .imagen-contacto {
-    width: 100%;
-  }
-  .imagen-contacto img {
-    width: 50%;
-    height: 200px;
-  }
-}
-/*Para celular*/
-/*Para tablet*/
-@media only screen and (min-width: 451px) and (max-width: 960px) {
-  .contacto-container {
-    flex-direction: column;
-  }
-  .formulario {
-    width: 100%;
-  }
-  .imagen-contacto {
-    width: 100%;
-  }
-  .imagen-contacto img {
-    width: 50%;
-    height: 300px;
-  }
-}
-/*Para tablet*/
-/*Responsive contactanos */
 
 /*Animaciones*/
 
@@ -415,8 +345,11 @@ p {
   transform: scale(1.1);
 }
 
-.menu li a:hover {
+.nav-link:hover {
   font-weight: bold;
   font-size: 1.3rem;
-  color: red;
+  background-color: #e8e8e8;
+}
+.nav-item:hover {
+  border: 1px solid black;
 }
