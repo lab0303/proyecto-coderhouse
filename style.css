@@ -5,6 +5,9 @@
 body {
   min-height: 100vh;
 }
+.main1 {
+  height: 80vh;
+}
 /*CSS para el header*/
 .header-container {
   background: #f4f4f2;
