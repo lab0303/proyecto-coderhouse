@@ -190,55 +190,24 @@ p {
 /*Responsive del index */
 /*Para celular*/
 @media only screen and (max-width: 450px) {
-  .menu {
-    flex-direction: column;
-  }
-  .titulo {
-    font-size: 1.5rem;
-  }
   .descripcion-container {
     display: block;
   }
   .servicios {
     width: 100%;
     margin-bottom: 20px;
-  }
-  .footer-container {
-    display: block;
-  }
-  .imagenes,
-  .mapa {
-    width: 100%;
-    border: none;
-  }
-  .imagenes-redes img {
-    width: 30px;
-  }
-  .mapa iframe {
-    width: 40px;
-    height: 30px;
   }
 }
 /*Para celular*/
 /*Para tablet*/
 
 @media only screen and (min-width: 451px) and (max-width: 960px) {
-  .menu {
-    flex-direction: column;
-  }
-  .titulo {
-    font-size: 2rem;
-  }
   .descripcion-container {
     display: block;
   }
   .servicios {
     width: 100%;
     margin-bottom: 20px;
-  }
-
-  .imagenes-redes img {
-    width: 40px;
   }
 }
 /*Para tablet*/

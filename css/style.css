@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background: #f4f4f2;
+  display: flex;
+  align-items: center;
+}
+.header-container .imagen-logo {
+  padding-left: 20px;
+}
+.header-container .imagen-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-item:hover {
+  border: 1px solid black;
+}
+.nav-item .nav-link:hover {
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #e8e8e8;
+}
+
+.footer-container {
+  background: #bbbfca;
+  color: black;
+  display: flex;
+}
+.footer-container .imagenes {
+  width: 50%;
+  border-right: solid 2px black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-container .imagenes img {
+  width: 50px;
+}
+@media only screen and (max-width: 450px) {
+  .footer-container .imagenes img {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .footer-container .imagenes {
+    width: 100%;
+    border: none;
+  }
+}
+.footer-container .mapa {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 450px) {
+  .footer-container .mapa {
+    width: 100%;
+    border: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .footer-container .mapa iframe {
+    width: 40px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-container {
+    display: block;
+  }
+}
+
+main {
+  width: 100%;
+  background: #e8e8e8;
+}
+main .imagen-perrito {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+main .imagen-perrito img {
+  width: 60%;
+  height: 100%;
+}
+main .descripcion-container {
+  display: flex;
+  padding: 50px;
+}
+main .descripcion-container .servicios {
+  width: 50%;
+  padding-left: 20px;
+}
+@media screen and (max-width: 960px) {
+  main .descripcion-container .servicios {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main .descripcion-container .razones {
+  padding-left: 50px;
+}
+@media screen and (max-width: 960px) {
+  main .descripcion-container .razones {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  main .descripcion-container {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

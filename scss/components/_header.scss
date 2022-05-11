@@ -1,0 +1,25 @@
+.header-container {
+  background: #f4f4f2;
+  display: flex;
+  align-items: center;
+  .imagen-logo {
+    padding-left: 20px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.nav-item {
+  &:hover {
+    border: 1px solid black;
+  }
+  .nav-link {
+    &:hover {
+      font-weight: bold;
+      font-size: 1.3rem;
+      background-color: #e8e8e8;
+    }
+  }
+}
