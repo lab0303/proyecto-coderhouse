@@ -1,0 +1,56 @@
+@import "../base/mixin";
+@import "../base/map";
+.tarjeta-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 400px;
+  gap: 30px;
+  margin: 20px;
+  .tarjeta {
+    width: 100%;
+    border: map-get($general, border-gr);
+    flex-direction: column;
+    @extend %flex;
+    box-shadow: map-get($general, shadow-gr);
+    img {
+      border: map-get($general, border-gr);
+      width: 50%;
+      height: 50%;
+      margin: 10px auto;
+      box-shadow: map-get($general, shadow-gr);
+    }
+    .tarjeta-nombre {
+      width: 100%;
+      height: 50%;
+      font-size: 40px;
+      flex-direction: column;
+      @include flex(flex, space-around, center);
+
+      @media only screen and (max-width: 450px) {
+        font-size: 25px;
+      }
+      @media only screen and (min-width: 451px) and (max-width: 960px) {
+        font-size: 30px;
+      }
+    }
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+      transform: scale(1.1);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+    gap: 30px;
+    margin: 20px;
+  }
+  @media screen and (min-width: 451px) and (max-width: 960px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 30px;
+    margin: 20px;
+  }
+}

@@ -1,3 +1,4 @@
+@import "../base/mixin";
 .footer-container {
   background: #bbbfca;
   color: black;
@@ -5,9 +6,7 @@
   .imagenes {
     width: 50%;
     border-right: solid 2px black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, space-around, center);
     img {
       width: 50px;
       @media only screen and (max-width: 450px) {
@@ -21,9 +20,7 @@
   }
   .mapa {
     width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, space-around, center);
 
     @media only screen and (max-width: 450px) {
       width: 100%;

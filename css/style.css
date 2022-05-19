@@ -75,6 +75,11 @@
   }
 }
 
+.tarjeta-container .tarjeta, main .imagen-perrito {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   width: 100%;
   background: #e8e8e8;
@@ -82,8 +87,6 @@ main {
 main .imagen-perrito {
   width: 100%;
   height: 50%;
-  display: flex;
-  justify-content: center;
 }
 main .imagen-perrito img {
   width: 60%;
@@ -114,6 +117,68 @@ main .descripcion-container .razones {
 @media screen and (max-width: 960px) {
   main .descripcion-container {
     display: block;
+  }
+}
+
+.tarjeta-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 400px;
+  gap: 30px;
+  margin: 20px;
+}
+.tarjeta-container .tarjeta {
+  width: 100%;
+  border: solid 1px black;
+  flex-direction: column;
+  box-shadow: 5px 10px 8px #888888;
+}
+.tarjeta-container .tarjeta img {
+  border: solid 1px black;
+  width: 50%;
+  height: 50%;
+  margin: 10px auto;
+  box-shadow: 5px 10px 8px #888888;
+}
+.tarjeta-container .tarjeta .tarjeta-nombre {
+  width: 100%;
+  height: 50%;
+  font-size: 40px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 450px) {
+  .tarjeta-container .tarjeta .tarjeta-nombre {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .tarjeta-container .tarjeta .tarjeta-nombre {
+    font-size: 30px;
+  }
+}
+.tarjeta-container .tarjeta:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.1);
+}
+@media screen and (max-width: 450px) {
+  .tarjeta-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+    gap: 30px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .tarjeta-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 30px;
+    margin: 20px;
   }
 }
 
