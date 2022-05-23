@@ -75,7 +75,7 @@
   }
 }
 
-.tarjeta-container .tarjeta, main .imagen-perrito {
+.imagen-contacto, .tarjeta-container .tarjeta, main .imagen-perrito {
   display: flex;
   justify-content: center;
 }
@@ -180,6 +180,156 @@ main .descripcion-container .razones {
     gap: 30px;
     margin: 20px;
   }
+}
+
+.mision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mision img {
+  width: 50%;
+}
+@media only screen and (max-width: 960px) {
+  .mision img {
+    width: 70%;
+  }
+}
+.mision div {
+  border: solid 1px black;
+  border-radius: 50px;
+  box-shadow: 10px 10px 15px lightblue;
+  width: 40%;
+  margin: 30px;
+  font-size: 30px;
+}
+.mision div h3,
+.mision div p {
+  padding-bottom: 30px;
+  margin: 20px;
+}
+@media only screen and (max-width: 960px) {
+  .mision div h3,
+.mision div p {
+    padding-bottom: 0px;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .mision div {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .mision {
+    flex-direction: column;
+  }
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.vision img {
+  width: 50%;
+}
+@media only screen and (max-width: 960px) {
+  .vision img {
+    width: 70%;
+  }
+}
+.vision div {
+  border: solid 1px black;
+  border-radius: 50px;
+  box-shadow: 10px 10px 15px lightblue;
+  width: 40%;
+  margin: 30px;
+  font-size: 30px;
+}
+.vision div h3,
+.vision div p {
+  padding-bottom: 30px;
+  margin: 20px;
+}
+@media only screen and (max-width: 960px) {
+  .vision div h3,
+.vision div p {
+    padding-bottom: 0px;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .vision div {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .vision {
+    flex-direction: column;
+  }
+}
+
+.comentarios-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px;
+  gap: 30px;
+  margin: 20px;
+}
+.comentarios-container .comentarios {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border: solid 1px black;
+  font-size: 20px;
+}
+.comentarios-container .comentarios:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 450px) {
+  .comentarios-container .comentarios {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .comentarios-container .comentarios {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .comentarios-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .comentarios-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+}
+
+.imagen-contacto, main .imagen-perrito, .tarjeta-container .tarjeta {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+.main1 {
+  height: 77vh;
+}
+
+.imagen-contacto {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@import "../base/extend";
+textarea {
+  resize: none;
+  height: 200px;
+}
+.main1 {
+  height: 77vh;
+}
+
+.imagen-contacto {
+  width: 50%;
+  @extend %flex;
+}
