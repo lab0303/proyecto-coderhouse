@@ -1,0 +1,6 @@
+1. Cada html tiene su propio h1
+2. Agregue mas caracteres en el titulo del index
+3. En el navbar hay mas enlaces internos 
+4. Agregue titulo en el iframes en el
+5. Agregue el meta description
+6. Agregue un meta con keywords
