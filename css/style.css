@@ -120,12 +120,16 @@ main .descripcion-container .razones {
   }
 }
 
+.disclaimer {
+  display: none;
+}
+
 .tarjeta-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 400px;
   gap: 30px;
-  margin: 20px;
+  margin: 0px 20px;
 }
 .tarjeta-container .tarjeta {
   width: 100%;
@@ -169,7 +173,6 @@ main .descripcion-container .razones {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 300px;
     gap: 30px;
-    margin: 20px;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
@@ -178,7 +181,6 @@ main .descripcion-container .razones {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px;
     gap: 30px;
-    margin: 20px;
   }
 }
 
@@ -278,7 +280,7 @@ main .descripcion-container .razones {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 400px;
   gap: 30px;
-  margin: 20px;
+  margin: 0px 20px;
 }
 .comentarios-container .comentarios {
   display: flex;
@@ -286,6 +288,7 @@ main .descripcion-container .razones {
   padding-left: 20px;
   border: solid 1px black;
   font-size: 20px;
+  overflow: auto;
 }
 .comentarios-container .comentarios:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -294,11 +297,13 @@ main .descripcion-container .razones {
 @media only screen and (max-width: 450px) {
   .comentarios-container .comentarios {
     font-size: 16px;
+    overflow: auto;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .comentarios-container .comentarios {
     font-size: 18px;
+    overflow: auto;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -326,6 +331,11 @@ textarea {
 
 .main1 {
   height: 77vh;
+}
+@media screen and (max-width: 767px) {
+  .main1 {
+    height: auto;
+  }
 }
 
 .imagen-contacto {

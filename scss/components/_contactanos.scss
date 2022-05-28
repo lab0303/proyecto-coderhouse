@@ -5,6 +5,9 @@ textarea {
 }
 .main1 {
   height: 77vh;
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 }
 
 .imagen-contacto {
